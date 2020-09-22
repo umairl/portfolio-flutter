@@ -26,7 +26,7 @@ class _HomePageState extends State<HomePage> {
     final themeChange = Provider.of<DarkThemeProvider>(context);
 
     return Scaffold(
-      body: isMobile(context) ? Scrollbar(child: Home()) : Home(),
+      body: isMobile(context) ? SingleChildScrollView(child: Home()) : Home(),
       floatingActionButton: FloatingActionButton(
         child: Icon(
           themeChange.darkTheme
@@ -285,14 +285,14 @@ class Home extends StatelessWidget {
                   TextSpan(
                     text: 'Want to get in touch? Write me at ',
                     style: GoogleFonts.lato(
-                      fontSize: 24.0,
+                      fontSize: 20.0,
                       color: Theme.of(context).textSelectionColor,
                     ),
                   ),
                   TextSpan(
                     text: 'sgshubham98@gmail.com',
                     style: GoogleFonts.lato(
-                      fontSize: 24.0,
+                      fontSize: 20.0,
                       color: Theme.of(context).textSelectionColor,
                       textStyle: TextStyle(
                         decoration: TextDecoration.underline,
@@ -306,14 +306,14 @@ class Home extends StatelessWidget {
                   TextSpan(
                     text: ' or give a call @ ',
                     style: GoogleFonts.lato(
-                      fontSize: 24.0,
+                      fontSize: 20.0,
                       color: Theme.of(context).textSelectionColor,
                     ),
                   ),
                   TextSpan(
                     text: '+91 8868003003',
                     style: GoogleFonts.lato(
-                      fontSize: 24.0,
+                      fontSize: 20.0,
                       color: Theme.of(context).textSelectionColor,
                       textStyle: TextStyle(
                         decoration: TextDecoration.underline,
