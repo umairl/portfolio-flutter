@@ -4,26 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A new Flutter project.">
-  
+
   <title>Flutter Web App</title>
 
   <!-- Icons and Manifest -->
   <link rel="manifest" href="manifest.json">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
   <link rel="shortcut icon" href="favicon.png" type="image/png">
-
-  <!-- Responsive settings for mobile -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
 </head>
 <body>
+  <h1 style="text-align: center; margin-top: 20%;">Welcome to My Flutter Portfolio!</h1>
+  <p style="text-align: center;">If you see this message, the HTML file is loading correctly.</p>
+
   <script>
-    // Register service worker
+    // Register service worker for PWA support
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('flutter_service_worker.js');
+      navigator.serviceWorker.register('./flutter_service_worker.js');
     }
   </script>
 
-  <script src="main.dart.js" type="application/javascript" defer></script>
+  <script src="./main.dart.js" type="application/javascript" defer></script>
 </body>
 </html>
